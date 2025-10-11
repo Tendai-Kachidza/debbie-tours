@@ -1,0 +1,439 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Debbie Tours</title>
+        <link rel="icon" href="./img/j.jpg" type="image/jpg">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--CSS============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">					
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+		<body>
+			<div class="protfolio-wrap">
+
+			<!-- Start Header Area -->
+			<header class="default-header">
+				<nav class="navbar navbar-expand-lg  navbar-light">
+					<div class="container">
+						  <a class="navbar-brand" href="index.html">
+						  	<img src="img/" alt="logo">
+						  </a>
+						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						    <span class="text-white lnr lnr-menu"></span>
+						  </button>
+
+						  <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+						    <ul class="navbar-nav">
+                                <li><a href="./index.html">Home</a></li>
+								<li><a href="./tours.html">Tour Sites</a></li>
+								<li><a href="./services.html">Services</a></li>
+								<li><a href="./about.html">About Us</a></li>
+								<li><a href="./book.html">Book Now</a></li>
+						    </ul>
+						  </div>						
+					</div>
+				</nav>
+			</header>
+			<!-- End Header Area -->
+
+                   <!-- ABOUT HERO -->
+<section id="tour-hero" style="position:relative; height:60vh; background:url('img/tourists.png') center/cover no-repeat; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff; font-family:'Poppins',sans-serif;">
+  <div style="background:rgba(0,0,0,0.5); position:absolute; top:0; left:0; width:100%; height:100%;"></div>
+  <div style="position:relative; z-index:2;">
+    <h1 style="font-size:48px; font-weight:700; margin-bottom:10px; color: white;">Our Story</h1>
+    <p style="font-size:18px; letter-spacing:1px;">One unforgettable journey at a time!</p>
+  </div>
+</section>
+
+<!-- ================= ABOUT US DESCRIPTION ================= -->
+<section id="about-us" style="padding:80px 0; background:#fff; font-family:'Poppins',sans-serif; color:#333;">
+  <div style="width:85%; margin:auto; max-width:1000px; text-align:center;">
+    <h2 style="font-size:32px; color:#0b1e3f; font-weight:700; margin-bottom:20px;">About Debbie Tours</h2>
+    <p style="font-size:16px; line-height:1.8; color:#555;">
+      Debbie Tours was founded with a passion for adventure, culture, and connection. We are a dedicated team of travel
+      professionals offering immersive and sustainable tours across the Falkland Islands. Our mission is to showcase
+      the beauty of our home — from its rich wildlife to its welcoming people — through curated experiences that leave
+      a lasting impact. Whether you're a solo traveler or a group of explorers, we craft journeys that combine comfort,
+      discovery, and authenticity. Every tour we organize reflects our deep commitment to preserving nature and
+      celebrating local heritage.
+    </p>
+  </div>
+</section>
+
+<!-- ================= MISSION & VISION SECTION ================= -->
+<section id="mission" style="position:relative; padding:80px 0; background:#f8f9fa; font-family:'Poppins',sans-serif; overflow:hidden;">
+  <div style="width:85%; margin:auto; text-align:center; position:relative; z-index:2;">
+    <h2 style="font-size:32px; color:#0b1e3f; font-weight:700;">Our Mission & Vision</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:40px; margin-top:40px;">
+      <div class="mv-card" style="background:#fff; padding:25px; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); opacity:0; transform:translateY(40px); transition:all .8s ease;">
+        <h3 style="color:#0b1e3f; font-size:20px; margin-bottom:10px;">Mission</h3>
+        <p style="color:#666; font-size:15px;">
+          To provide travelers with meaningful and authentic experiences that connect them deeply with nature, culture, and people while promoting sustainable tourism.
+        </p>
+      </div>
+
+      <div class="mv-card" style="background:#fff; padding:25px; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); opacity:0; transform:translateY(40px); transition:all .8s ease;">
+        <h3 style="color:#0b1e3f; font-size:20px; margin-bottom:10px;">Vision</h3>
+        <p style="color:#666; font-size:15px;">
+          To become the leading tour operator recognized for excellence, community impact, and environmental stewardship in the Falkland Islands.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating bubbles background -->
+  <div id="bubbles-mission" style="position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden; pointer-events:none; z-index:1;"></div>
+</section>
+
+<!-- ================= JS ANIMATIONS ================= -->
+<script>
+  // Scroll animation for Mission & Vision cards
+  const mvCards = document.querySelectorAll('.mv-card');
+  function revealMissionCards() {
+    const triggerBottom = window.innerHeight * 0.85;
+    mvCards.forEach(card => {
+      const cardTop = card.getBoundingClientRect().top;
+      if (cardTop < triggerBottom) {
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+      }
+    });
+  }
+  window.addEventListener('scroll', revealMissionCards);
+  revealMissionCards();
+
+  // Floating bubbles animation
+  const bubblesMission = document.getElementById('bubbles-mission');
+  for (let i = 0; i < 15; i++) {
+    const bubble = document.createElement('span');
+    const size = Math.random() * 25 + 10;
+    bubble.style.width = `${size}px`;
+    bubble.style.height = `${size}px`;
+    bubble.style.position = 'absolute';
+    bubble.style.bottom = '-50px';
+    bubble.style.left = `${Math.random() * 100}%`;
+    bubble.style.background = 'rgba(53,120,211,0.25)';
+    bubble.style.borderRadius = '50%';
+    bubble.style.animation = `floatMission ${6 + Math.random() * 5}s linear infinite`;
+    bubble.style.animationDelay = `${Math.random() * 5}s`;
+    bubblesMission.appendChild(bubble);
+  }
+
+  // Add bubble keyframes
+  const missionStyle = document.createElement('style');
+  missionStyle.innerHTML = `
+    @keyframes floatMission {
+      0% { transform: translateY(0) scale(1); opacity: 0.8; }
+      100% { transform: translateY(-800px) scale(1.5); opacity: 0; }
+    }
+  `;
+  document.head.appendChild(missionStyle);
+</script>
+
+
+<!-- ================= GALLERY SECTION ================= -->
+<section id="gallery" style="padding:70px 0; background:#fff; font-family:'Poppins',sans-serif;">
+  <div style="text-align:center; margin-bottom:36px;">
+    <h2 style="font-size:32px; color:#0b1e3f; font-weight:700; margin:0 0 8px;">Our Adventures Gallery</h2>
+    <p style="font-size:15px; color:#666; margin:0;">Moments from our tours</p>
+  </div>
+
+  <!-- Local styles for this gallery (kept inline for ease) -->
+  <style>
+    /* container behaves like masonry */
+    .masonry-grid {
+      width:92%;
+      margin:0 auto;
+      column-gap:22px;
+      column-count:3;
+    }
+    /* responsive column counts */
+    @media (max-width:1000px){ .masonry-grid{ column-count:2; } }
+    @media (max-width:640px){ .masonry-grid{ column-count:1; } }
+
+    .masonry-item {
+      display:inline-block;            /* required for CSS column masonry */
+      width:100%;
+      margin:0 0 22px;
+      position:relative;
+      border-radius:18px;
+      overflow:hidden;
+      break-inside:avoid;
+      -webkit-backface-visibility:hidden;
+      box-shadow: 0 6px 20px rgba(2,6,23,0.08);
+      transition: transform .35s ease, box-shadow .35s ease;
+    }
+
+    /* variable heights to mimic collage (adjust by changing class) */
+    .masonry-item.small img  { height:180px; }
+    .masonry-item.medium img { height:260px; }
+    .masonry-item.tall img   { height:480px; }
+
+    .masonry-item img {
+      width:100%;
+      display:block;
+      object-fit:cover;
+      border-radius:inherit; /* inherit rounded corners */
+      transition: transform .6s cubic-bezier(.22,.9,.35,1);
+      transform-origin: center center;
+      vertical-align:middle;
+    }
+
+    /* overlay */
+    .masonry-overlay {
+      position:absolute;
+      inset:0;
+      display:flex;
+      flex-direction:column;
+      justify-content:flex-end; /* show text at bottom like your sample */
+      padding:22px;
+      background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0.62) 100%);
+      color:#fff;
+      opacity:0;
+      transform: translateY(8px);
+      transition: opacity .35s ease, transform .35s ease;
+      pointer-events:none;
+    }
+
+    .masonry-item:focus-within,
+    .masonry-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 40px rgba(2,6,23,0.12);
+    }
+    .masonry-item:hover img,
+    .masonry-item:focus-within img {
+      transform: scale(1.07);
+    }
+    .masonry-item:hover .masonry-overlay,
+    .masonry-item:focus-within .masonry-overlay {
+      opacity:1;
+      transform: translateY(0);
+      pointer-events:auto;
+    }
+
+    /* text styles inside overlay */
+    .masonry-overlay h3 {
+      margin:0 0 4px;
+      font-size:18px;
+      font-weight:700;
+      line-height:1.05;
+    }
+    .masonry-overlay p {
+      margin:0;
+      font-size:13px;
+      color:rgba(255,255,255,0.92);
+      opacity:.95;
+    }
+
+    /* small accessibility focus ring */
+    .masonry-item a:focus { outline: 3px solid rgba(255,180,0,0.25); outline-offset:4px; border-radius:14px; }
+  </style>
+
+  <!-- Masonry grid: change/add <a> blocks to include more images.
+       Use classes small|medium|tall to vary tile heights -->
+  <div class="masonry-grid">
+    <a href="img/c4.jpg" class="masonry-item tall" title="Wildlife Encounter — Penguin Colony" aria-label="View Wildlife Encounter">
+      <img src="img/c4.jpg" alt="Penguin" loading="lazy">
+      <div class="masonry-overlay">
+        <h3>Wildlife Encounter</h3>
+        <p>Get up close with the Falklands' penguin colonies.</p>
+      </div>
+    </a>
+
+     <a href="img/c4.jpg" class="masonry-item medium" title="Cultural Parade" aria-label="View Cultural Parade">
+      <img src="img/c4.jpg" alt="Cultural Parade" loading="lazy">
+      <div class="masonry-overlay">
+        <h3>Cultural Parade</h3>
+        <p>Community events and local celebrations.</p>
+      </div>
+    </a>
+
+    <a href="img/c4.jpg" class="masonry-item medium" title="Ocean Views" aria-label="View Ocean Views">
+      <img src="img/c4.jpg" alt="Ocean view" loading="lazy">
+      <div class="masonry-overlay">
+        <h3>Ocean Views</h3>
+        <p>Serene moments by the shoreline.</p>
+      </div>
+    </a>
+
+      <a href="img/c4.jpg" class="masonry-item tall" title="Adventure Tours" aria-label="View Adventure Tours">
+      <img src="img/c4.jpg" alt="Adventure" loading="lazy">
+      <div class="masonry-overlay">
+        <h3>Adventure Tours</h3>
+        <p>Rugged landscapes and coastal hikes.</p>
+      </div>
+    </a>
+
+    <a href="img/c4.jpg" class="masonry-item medium" title="Cultural Parade" aria-label="View Cultural Parade">
+      <img src="img/c4.jpg" alt="Cultural Parade" loading="lazy">
+      <div class="masonry-overlay">
+        <h3>Cultural Parade</h3>
+        <p>Community events and local celebrations.</p>
+      </div>
+    </a>
+
+    <a href="img/c4.jpg" class="masonry-item small" title="Cultural Parade" aria-label="View Cultural Parade">
+      <img src="img/c4.jpg" alt="Cultural Parade" loading="lazy">
+      <div class="masonry-overlay">
+        <h3>Cultural Parade</h3>
+        <p>Community events and local celebrations.</p>
+      </div>
+    </a>
+
+    <a href="img/c4.jpg" class="masonry-item medium" title="Seals on the Beach" aria-label="View Seals on the Beach">
+      <img src="img/c4.jpg" alt="Seals" loading="lazy">
+      <div class="masonry-overlay">
+        <h3>Seals on the Beach</h3>
+        <p>Playful seals lounging on the sand.</p>
+      </div>
+    </a>
+
+    <!-- Duplicate/add more <a class="masonry-item ..."> blocks as needed -->
+  </div>
+
+  <!-- Optional lightbox behavior:
+       - If jQuery + Magnific Popup exist it will initialize gallery lightbox
+       - Otherwise clicking opens image in a new tab (fallback) -->
+  <script>
+    (function(){
+      // Use Magnific Popup if available
+      var hasJQ = typeof window.jQuery !== 'undefined';
+      var jq = window.jQuery;
+      if (hasJQ && jq.fn && jq.fn.magnificPopup) {
+        jq('.masonry-grid').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          gallery: { enabled: true },
+          removalDelay: 300,
+          mainClass: 'mfp-fade',
+          zoom: { enabled: true, duration: 300, opener: function(el){ return el.find('img'); } }
+        });
+      } else {
+        // Fallback: open in a new tab to view larger image
+        document.querySelectorAll('.masonry-grid a').forEach(function(a){
+          a.addEventListener('click', function(e){
+            // Allow ctrl/cmd click & middle-click to behave normally
+            if (e.ctrlKey || e.metaKey || e.button === 1) return;
+            e.preventDefault();
+            window.open(a.href, '_blank');
+          });
+        });
+      }
+    })();
+  </script>
+</section>
+
+
+<!-- ================= CONTACT FORM SECTION ================= -->
+<section id="contact" style="padding:80px 0; background: #fff; font-family:'Poppins',sans-serif;">
+  <div style="text-align:center; margin-bottom:50px;">
+    <h2 style="font-size:32px; color:#0b1e3f; font-weight:700;">Get in Touch</h2>
+    <p style="font-size:16px; color:#555;">Have questions or want to plan your next adventure? We’d love to hear from you!</p>
+  </div>
+
+  <form style="max-width:700px; margin:auto; display:flex; flex-direction:column; gap:15px;">
+    <input type="text" placeholder="Full Name" style="padding:12px; border:1px solid #ccc; border-radius:8px; font-size:15px;">
+    <input type="email" placeholder="Email Address" style="padding:12px; border:1px solid #ccc; border-radius:8px; font-size:15px;">
+    <textarea placeholder="Your Message" rows="5" style="padding:12px; border:1px solid #ccc; border-radius:8px; font-size:15px; resize:none;"></textarea>
+    <button type="submit" style="padding:12px; background:#ffb400; color:#0b1e3f; border:none; border-radius:30px; font-weight:600; cursor:pointer; transition:0.3s;">Send Message</button>
+  </form>
+</section>
+
+<!-- ================= JS ================= -->
+<script>
+  // Simple form submission alert
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for reaching out! We’ll get back to you shortly.');
+    this.reset();
+  });
+
+  // Hover effect for team cards
+  document.querySelectorAll('#team div[style*="padding:20px"]').forEach(card => {
+    card.addEventListener('mouseenter', () => card.style.transform = 'translateY(-5px)');
+    card.addEventListener('mouseleave', () => card.style.transform = 'translateY(0)');
+    card.style.transition = 'transform 0.3s';
+  });
+</script>
+
+
+              <!-- start footer Area -->		
+				<footer class="footer-area section-gap">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-5 col-md-6 col-sm-6">
+								<div class="single-footer-widget">
+									<h6>About Us</h6>
+									<p>
+										Debbie Tours is your local expert for unforgettable adventures in the Falkland Islands. We specialize in crafting personalized, stress-free journeys, offering unparalleled access to unique wildlife, pristine landscapes, and fascinating history. Let us share our home with you.
+									</p>
+									<p class="footer-text">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Debbie Tours
+								</p>	
+								</div>
+							</div>
+							<div class="col-lg-5  col-md-6 col-sm-6">
+								<div class="single-footer-widget">
+									<h6>Travel Updates</h6>
+									<p>The latest wildlife sightings and our special tour offerings.</p>
+									<div class="" id="mc_embed_signup">
+							         <form target="_blank"  action="" method="get" class="form-inline">
+											<input class="form-control" name="EMAIL" placeholder="Enter Your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Your Email Here '" required="" type="email">
+				                            	<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+				                           
+											<div class="info"></div>
+										</form>
+									</div>
+								</div>
+							</div>						
+							<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+								<div class="single-footer-widget">
+									<h6>Follow Us</h6>
+									<p>info@debbietours.com</p>
+									<p>+500 55108</p>
+									<div class="footer-social d-flex align-items-center">
+										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-whatsapp"></i></a>
+										<a href="#"><i class="fa fa-instagram"></i></a>
+									</div>
+								</div>
+							</div>							
+						</div>
+					</div>
+				</footer>	
+				<!-- End footer Area -->					
+			</div>
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>			
+			<script src="js/jquery.sticky.js"></script>			
+			<script src="js/jquery.nice-select.min.js"></script>			
+			<script src="js/parallax.min.js"></script>	
+			<script src="js/mail-script.js"></script>
+			<script src="js/isotope.pkgd.min.js"></script>	
+			<script src="js/main.js"></script>	
+		</body>
+	</html>
