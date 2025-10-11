@@ -2275,7 +2275,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   position: relative;
   text-transform: uppercase;
-  color: #222;
+  color: #04091e;
   font-weight: 500;
 }
 
@@ -2384,7 +2384,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .single-review .star .checked {
-  color: orange;
+  color:goldenrod;
 }
 
 .single-review {
