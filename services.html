@@ -47,7 +47,7 @@
 								<li><a href="./tours.html">Tour Sites</a></li>
 								<li><a href="./services.html">Services</a></li>
 								<li><a href="./about.html">About Us</a></li>
-								<li><a href="./book.html">Bookings</a></li>
+								<li><a href="./bookings.html">Bookings</a></li>
 						    </ul>
 						  </div>						
 					</div>
@@ -55,16 +55,50 @@
 			</header>
 			<!-- End Header Area -->
 
-                   <!-- SERVICES HERO -->
-<section id="tour-hero" style="position:relative; height:60vh; background:url('img/travel.jpg') center/cover no-repeat; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff; font-family:'Poppins',sans-serif;">
-  <div style="background:rgba(0,0,0,0.5); position:absolute; top:0; left:0; width:100%; height:100%;"></div>
-  <div style="position:relative; z-index:2;">
-	<p style="font-size:18px; letter-spacing:1px; color: #8ab92d; text-transform: uppercase;">Crafted seamless, enriching experiences</p>
-    <h1 style="font-size:48px; font-weight:700; margin-bottom:10px; color: white;">Our Services</h1>
+
+<!-- ================= HERO SECTION (ISLAND ADVENTURE STYLE) ================= -->
+<section id="tour-hero" style="position:relative; width:100%; min-height:100vh; background:url('img/gallery/Falkland-Islands-The-Neck.jpg') center/cover no-repeat; display:flex; align-items:center; justify-content:center; font-family:'Poppins',sans-serif; overflow:hidden;">
+
+  <!-- Dark Overlay -->
+  <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(11,30,63,0.55); z-index:1;"></div>
+
+  <!-- Glass Content -->
+  <div style="position:relative; z-index:2; text-align:center; padding:80px 20px; backdrop-filter:blur(6px); background:rgba(255,255,255,0.08); border-radius:20px; width:90%; max-width:900px; box-shadow:0 10px 40px rgba(0,0,0,0.2);">
+    
+    <p style="font-size:14px; color: #8ab92d; font-family: "Poppins", sans-serif;">CRAFTED SEAMLESS, ENRICHING EXPERIENCES!</p>
+
+    <h1 style="font-size:56px; font-weight:700; color:#fff; margin-bottom:15px;">
+      Our Services
+    </h1>
+
+    <a href="#tours" style="display:inline-block; padding:14px 40px; border-radius:40px; background:#8ab92d; color:white; font-weight:600; letter-spacing:0.3px; text-decoration:none; box-shadow:0 8px 25px rgba(138,185,45,0.3); transition:all .3s;">
+      Learn More
+    </a>
   </div>
+
+  <!-- Subtle Wave Transition -->
+  <svg viewBox="0 0 1440 320" style="position:absolute; bottom:0; left:0; width:100%; z-index:2;">
+    <path fill="#ffffff" fill-opacity="1" d="M0,256L60,250.7C120,245,240,235,360,208C480,181,600,139,720,138.7C840,139,960,181,1080,181.3C1200,181,1320,139,1380,117.3L1440,96L1440,320L0,320Z"></path>
+  </svg>
 </section>
 
-
+<!-- ================= RESPONSIVE FIX ================= -->
+<style>
+  @media(max-width:768px){
+    #tour-hero {
+      min-height:90vh !important;
+    }
+    #tour-hero h1 {
+      font-size:36px !important;
+    }
+    #tour-hero p {
+      font-size:15px !important;
+    }
+    #tour-hero a {
+      padding:12px 32px !important;
+    }
+  }
+</style>
 
 <!-- ================= JOURNEY TIMELINE ================= -->
 <section id="journey-timeline" style="padding:100px 0; background:#fff; font-family:'Poppins',sans-serif; overflow:hidden;">
@@ -99,40 +133,6 @@
     </div>
   </div>
 </section>
-
-<!-- ================= IMMERSIVE EXPERIENCE SLIDER ================= 
-<section id="immersive-slider" style="padding:100px 0; background:#f4f8fc; font-family:'Poppins',sans-serif; overflow:hidden; position:relative;">
-  <div style="text-align:center; margin-bottom:60px;">
-    <h2 style="font-size:34px; color:#0b1e3f; font-weight:700;">Falklands in Motion</h2>
-    <p style="color:#8ab92d; ">Glide through breathtaking moments that define every Debbie Tours experience.</p>
-  </div>
-
-  <div id="slider-container" style="display:flex; gap:20px; overflow-x:auto; scroll-behavior:smooth; width:90%; max-width:1100px; margin:auto; padding-bottom:20px;">
-    <div class="slider-card" style="min-width:300px; background:#fff; border-radius:20px; box-shadow:0 8px 25px rgba(0,0,0,0.1); overflow:hidden; transition:transform .4s;">
-      <img src="img/slider1.jpg" alt="Wildlife" style="width:100%; height:220px; object-fit:cover;">
-      <div style="padding:20px;">
-        <h3 style="color:#0b1e3f;">Meet the Penguins</h3>
-        <p style="color:#666; font-size:15px;">Get up close to the famous King Penguins in their natural colonies.</p>
-      </div>
-    </div>
-
-    <div class="slider-card" style="min-width:300px; background:#fff; border-radius:20px; box-shadow:0 8px 25px rgba(0,0,0,0.1); overflow:hidden; transition:transform .4s;">
-      <img src="img/slider2.jpg" alt="Cruises" style="width:100%; height:220px; object-fit:cover;">
-      <div style="padding:20px;">
-        <h3 style="color:#0b1e3f;">Cruise the Coastline</h3>
-        <p style="color:#666; font-size:15px;">Sail along rugged shores and discover secluded beaches and coves.</p>
-      </div>
-    </div>
-
-    <div class="slider-card" style="min-width:300px; background:#fff; border-radius:20px; box-shadow:0 8px 25px rgba(0,0,0,0.1); overflow:hidden; transition:transform .4s;">
-      <img src="img/slider3.jpg" alt="Sunset" style="width:100%; height:220px; object-fit:cover;">
-      <div style="padding:20px;">
-        <h3 style="color:#0b1e3f;">Sunset Serenity</h3>
-        <p style="color:#666; font-size:15px;">End your day with unforgettable golden hour views over the ocean horizon.</p>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 <!-- ================= JS ANIMATIONS ================= -->
 <script>
@@ -183,57 +183,118 @@
     card.addEventListener('mouseleave', () => card.style.transform = 'scale(1)');
   });
 </script>
+<!-- ================= END JOURNEY TIMELINE ================= -->
+ 
+<!-- ================= IMMERSIVE EXPERIENCE SLIDER ================= 
+<section id="immersive-slider" style="padding:100px 0; background:#f4f8fc; font-family:'Poppins',sans-serif; overflow:hidden; position:relative;">
+  <div style="text-align:center; margin-bottom:60px;">
+    <h2 style="font-size:34px; color:#0b1e3f; font-weight:700;">Falklands in Motion</h2>
+    <p style="color:#8ab92d; ">Glide through breathtaking moments that define every Debbie Tours experience.</p>
+  </div>
 
+  <div id="slider-container" style="display:flex; gap:20px; overflow-x:auto; scroll-behavior:smooth; width:90%; max-width:1100px; margin:auto; padding-bottom:20px;">
+    <div class="slider-card" style="min-width:300px; background:#fff; border-radius:20px; box-shadow:0 8px 25px rgba(0,0,0,0.1); overflow:hidden; transition:transform .4s;">
+      <img src="img/slider1.jpg" alt="Wildlife" style="width:100%; height:220px; object-fit:cover;">
+      <div style="padding:20px;">
+        <h3 style="color:#0b1e3f;">Meet the Penguins</h3>
+        <p style="color:#666; font-size:15px;">Get up close to the famous King Penguins in their natural colonies.</p>
+      </div>
+    </div>
 
+    <div class="slider-card" style="min-width:300px; background:#fff; border-radius:20px; box-shadow:0 8px 25px rgba(0,0,0,0.1); overflow:hidden; transition:transform .4s;">
+      <img src="img/slider2.jpg" alt="Cruises" style="width:100%; height:220px; object-fit:cover;">
+      <div style="padding:20px;">
+        <h3 style="color:#0b1e3f;">Cruise the Coastline</h3>
+        <p style="color:#666; font-size:15px;">Sail along rugged shores and discover secluded beaches and coves.</p>
+      </div>
+    </div>
+
+    <div class="slider-card" style="min-width:300px; background:#fff; border-radius:20px; box-shadow:0 8px 25px rgba(0,0,0,0.1); overflow:hidden; transition:transform .4s;">
+      <img src="img/slider3.jpg" alt="Sunset" style="width:100%; height:220px; object-fit:cover;">
+      <div style="padding:20px;">
+        <h3 style="color:#0b1e3f;">Sunset Serenity</h3>
+        <p style="color:#666; font-size:15px;">End your day with unforgettable golden hour views over the ocean horizon.</p>
+      </div>
+    </div>
+  </div>
+</section> -->
 <!-- ================= VALUE & BENEFITS ================= -->
-<section id="why-choose-us" style="padding:80px 0; background:#fff; font-family:'Poppins',sans-serif;">
+
+<section id="why-choose-us" style="padding:80px 0; background:#fff; font-family:'Poppins',sans-serif; position:relative; overflow:hidden;">
   <div style="text-align:center; margin-bottom:60px;">
     <h2 style="font-size:32px; color:#0b1e3f; font-weight:700;">Why Us?</h2>
     <p style="color:#8ab92d;">We’re more than a tour company — we’re locals who love sharing our home with you.</p>
   </div>
 
+  <!-- ======= ANIMATED DIVIDER LINE ======= -->
+  <div class="glowing-divider"></div>
+
+  <!-- ======= TOP ROW ======= -->
   <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:40px; width:85%; margin:auto; text-align:center;">
     <div style="padding:20px;">
       <i class="fa fa-map-marker" style="font-size:36px; color:goldenrod; margin-bottom:15px;"></i>
-      <h3 style="color:#0b1e3f; font-size:20px; margin-bottom: 10px;">Local Expertise & Insights</h3>
-      <p style="color: #555555a4; font-size:15px;">Our passionate guides are residents of the Falklands, offering you genuine insider stories, rich cultural context, and invaluable local tips that you won't discover in any guidebook.</p>
+      <h3 style="color:#0b1e3f; font-size:20px; margin-bottom:10px;">Local Expertise & Insights</h3>
+      <p style="color:#555555a4; font-size:15px;">Our passionate guides are residents of the Falklands, offering you genuine insider stories, rich cultural context, and invaluable local tips that you won't discover in any guidebook.</p>
     </div>
 
     <div style="padding:20px;">
       <i class="fa fa-leaf" style="font-size:36px; color:goldenrod; margin-bottom:15px;"></i>
-      <h3 style="color:#0b1e3f; font-size:20px; margin-bottom: 10px;">Sustainable Exploration</h3>
+      <h3 style="color:#0b1e3f; font-size:20px; margin-bottom:10px;">Sustainable Exploration</h3>
       <p style="color:#555555a4; font-size:15px;">We are deeply committed to promoting responsible travel and ensuring the utmost respect for the fragile and unique Falkland Islands ecosystem and its precious wildlife.</p>
     </div>
 
     <div style="padding:20px;">
       <i class="fa fa-smile-o" style="font-size:36px; color:goldenrod; margin-bottom:15px;"></i>
-      <h3 style="color:#0b1e3f; font-size:20px; margin-bottom: 10px;">Personalized Comfort</h3>
+      <h3 style="color:#0b1e3f; font-size:20px; margin-bottom:10px;">Personalized Comfort</h3>
       <p style="color:#555555a4; font-size:15px;">Our intentionally small-group tours guarantee meticulous attention to every detail, your personal comfort, and a genuinely warm, welcoming, and private experience.</p>
     </div>
   </div>
 
-  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:40px; width:85%; margin:auto; text-align:center;">
+  <!-- ======= BOTTOM ROW ======= -->
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:40px; width:85%; margin:auto; text-align:center; margin-top:60px;">
     <div style="padding:20px;">
-      <i class="fa fa-globe" style="font-size:36px; color: goldenrod; margin-bottom:15px;"></i>
-      <h3 style="color:#0b1e3f; font-size:20px; margin-bottom: 10px;">Seamless Global Logistics</h3>
+      <i class="fa fa-globe" style="font-size:36px; color:goldenrod; margin-bottom:15px;"></i>
+      <h3 style="color:#0b1e3f; font-size:20px; margin-bottom:10px;">Seamless Global Logistics</h3>
       <p style="color:#555555a4; font-size:15px;">Navigating the Falkland Islands' unique travel infrastructure & we manage all the complex logistics in-house, ensuring a perfectly smooth journey.</p>
     </div>
 
     <div style="padding:20px;">
       <i class="fa fa-shield" style="font-size:36px; color:goldenrod; margin-bottom:15px;"></i>
-      <h3 style="color:#0b1e3f; font-size:20px; margin-bottom: 10px;">Safety & Well-being First</h3>
+      <h3 style="color:#0b1e3f; font-size:20px; margin-bottom:10px;">Safety & Well-being First</h3>
       <p style="color:#555555a4; font-size:15px;">Your safety and comfort are our highest priorities. We adhere to stringent safety protocols and provide experienced guides, ensuring a secure and worry-free exploration of the islands.</p>
     </div>
 
     <div style="padding:20px;">
       <i class="fa fa-trophy" style="font-size:36px; color:goldenrod; margin-bottom:15px;"></i>
-      <h3 style="color:#0b1e3f; font-size:20px; margin-bottom: 10px;">Traveler Approved</h3>
+      <h3 style="color:#0b1e3f; font-size:20px; margin-bottom:10px;">Traveler Approved</h3>
       <p style="color:#555555a4; font-size:15px;">Join the many satisfied travelers who have rated us highly. Our commitment to excellence in every tour aspect guarantees a truly premium and unforgettable Falklands adventure.</p>
     </div>
   </div>
+  <!-- ======= ANIMATED DIVIDER LINE ======= -->
+  <div class="glowing-divider"></div>
 </section>
 
-<!-- ================= CTA BOOKING SECTION WITH BUBBLES ================= -->
+<style>
+/* Animated glowing divider line between top and bottom grids */
+.glowing-divider {
+  width: 80%;
+  height: 2px;
+  margin: 60px auto 0;
+  border-radius: 2px;
+  background: linear-gradient(90deg, transparent, #8ab92d, transparent);
+  background-size: 200% 100%;
+  animation: glowMove 4s linear infinite;
+  box-shadow: 0 0 10px rgba(138, 185, 45, 0.5);
+}
+
+@keyframes glowMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+</style>
+<!-- ================= END VALUE & BENEFITS ================= -->
+
+<!-- ================= CTA BOOKING SECTION ================= -->
 <section id="book-cta" style="padding:100px 0; background:url('img/cta-bg.jpg') center/cover no-repeat; position:relative; text-align:center; color:#fff; font-family:'Poppins',sans-serif; margin-bottom: 100px; overflow:hidden;">
   
   <!-- Bubbles Container -->
@@ -279,7 +340,7 @@
   `;
   document.head.appendChild(ctaStyleSheet);
 </script>
-
+<!-- =================END CTA BOOKING SECTION ================= -->
 
 
                <!-- start footer Area -->		

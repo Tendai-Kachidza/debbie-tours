@@ -1,7 +1,7 @@
 {
   "name": "db-tours",
   "version": "1.0.0",
-  "description": "<div align=\"center\"> \t<a href=\"https://mrjatinchauhan.github.io/tourindia/\"><img src=\"./pictures/tour-india.jpg\"></a> \t<h4>A simple Tourism Website Portfolio which shows travel destinations across various part of Country. This theme is made using Bootstrap features several content sections, a responsive portfolio grid (tourist-places), window modals for each portfolio item, Blogs section and AboutUs Section</h4> </div>",
+  "description": "<div align=\"center\"> \t<a href=\"https://www.debbietours.com/\"><img src=\"img/travel.jpg\"></a> \t<h4>Our mission is to showcase the beauty of our home — from its rich wildlife to its welcoming people — through curated experiences that leave a lasting impact. </h4> </div>",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
