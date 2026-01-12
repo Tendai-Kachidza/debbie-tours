@@ -2731,3 +2731,26 @@ h6 {
         text-align: center;
     }
 }
+
+@media (max-width: 900px) {
+  .package-card {
+    flex-direction: column !important;
+  }
+
+  .card-banner {
+    max-width: 100% !important;
+    height: 220px;
+  }
+
+  .card-price {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+
+  .card-price .wrapper {
+    margin-bottom: 0;
+  }
+}
+
